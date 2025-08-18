@@ -1,0 +1,36 @@
+### Obtener todas las recetas
+GET http://localhost:8080/api/recipes
+Accept: application/json
+
+### Obtener receta por ID
+GET http://localhost:8080/api/recipes/1
+Accept: application/json
+
+### Crear receta
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Tortilla de patatas",
+  "description": "Receta tradicional española",
+  "instructions": "Pela y corta las patatas, fríe en aceite, añade huevos batidos, cuaja y sirve.",
+  "src": "https://ejemplo.com/tortilla.jpg",
+  "time": 25.5
+}
+
+### Actualizar receta
+PUT http://localhost:8080/api/recipes/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Tortilla de patatas mejorada",
+  "description": "¡Ahora más jugosa!",
+  "instructions": "Sigue igual, pero usa aceite de oliva virgen extra.",
+  "src": "https://ejemplo.com/tortilla2.jpg",
+  "time": 30.0
+}
+
+### Eliminar receta
+DELETE http://localhost:8080/api/recipes/1
