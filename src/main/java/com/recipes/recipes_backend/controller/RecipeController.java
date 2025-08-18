@@ -18,7 +18,7 @@ public class RecipeController {
     private final RecipeServiceImpl rs;
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/dishes")
+    @GetMapping()
     public List<RecipeResponse> getAllDishes() {
         return rs.getAll();
     }
