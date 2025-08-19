@@ -11,13 +11,16 @@ POST http://localhost:8080/api/recipes
 Content-Type: application/json
 Accept: application/json
 
-{
-  "name": "Tortilla de patatas",
-  "description": "Receta tradicional española",
-  "instructions": "Pela y corta las patatas, fríe en aceite, añade huevos batidos, cuaja y sirve.",
-  "src": "https://ejemplo.com/tortilla.jpg",
-  "time": 25.5
-}
+    {
+        "name": "Bizcocho de Yogur",
+        "description": "Bizcocho esponjoso y fácil con yogur.",
+        "instructions": "1. Mezclar yogur, azúcar, aceite, huevos y harina. 2. Verter en un molde y hornear a 180°C durante 35 minutos.",
+        "time": 45,
+        "src":"https://i.blogs.es/6859eb/bizcocho_yogur_4_3/1200_900.jpg"
+    }
+
+
+ 
 
 ### Actualizar receta
 PUT http://localhost:8080/api/recipes/1
